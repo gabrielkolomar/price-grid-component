@@ -1,0 +1,128 @@
+:root {
+  --cyan: #2ab2af;
+  --bright-yellow: #c0df34;
+  --light-gray: #e5eff5;
+  --grayish-blue: #98a6bd;
+  --white: #fff;
+  --light-cyan: rgb(98, 182, 176);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background: var(--light-gray);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.division {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container .information {
+  padding: 40px 40px;
+}
+
+.container .information h2 {
+  color: var(--cyan);
+  margin-bottom: 25px;
+}
+
+.container .information h3 {
+  color: var(--bright-yellow);
+  margin-bottom: 15px;
+}
+
+.container .information p {
+  color: var(--grayish-blue);
+  line-height: 25px;
+}
+
+.division .buy {
+  background: var(--cyan);
+  border-radius: 0 0 0 10px;
+  padding: 40px 40px;
+}
+
+.division .buy h3 {
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.division .buy h1 {
+  color: var(--white);
+  margin-bottom: 10px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+}
+
+.division .buy h1 strong {
+  font-size: 15px;
+  color: var(--light-gray);
+  margin-left: 10px;
+}
+
+.division .buy p {
+  color: var(--white);
+  margin-bottom: 35px;
+}
+
+.division .buy button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 2px solid var(--bright-yellow);
+  width: 100%;
+  background: var(--bright-yellow);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 15px;
+  transition: 1s;
+}
+
+.division .buy button:hover {
+  background: transparent;
+  border: 2px solid var(--bright-yellow);
+  color: var(--bright-yellow);
+}
+
+.division .buy button:active {
+  position: relative;
+  top: 2px;
+}
+
+.division .specs {
+  background: var(--light-cyan);
+  padding: 40px 40px;
+  border-radius: 0 0 10px 0;
+}
+
+.division .specs h3 {
+  color: var(--white);
+  margin-bottom: 25px;
+}
+
+.division .specs p {
+  color: var(--light-gray);
+  padding: 0 80px 0 0;
+}
