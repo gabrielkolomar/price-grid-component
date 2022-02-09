@@ -29,8 +29,6 @@ body {
 .container {
   max-width: 800px;
   background: var(--white);
-  display: flex;
-  flex-direction: column;
   border-radius: 10px;
 }
 
@@ -125,4 +123,28 @@ body {
 .division .specs p {
   color: var(--light-gray);
   padding: 0 80px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 40px 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .division {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .division .buy {
+    border-radius: 0;
+  }
+
+  .division .specs {
+    border-radius: 0 0 10px 10px;
+  }
 }
